@@ -1,0 +1,68 @@
+------------------------------------------
+***  Parameter Input-File for ProDiMo  ***
+------------------------------------------
+
+1.0         ! Mstar     [Msun]   : stellar mass 
+1.0         ! Lstar     [Lsun]   : stellar luminosity
+5770.0      ! Teff      [K]      : stellar effective temperature
+1.0E-3      ! Mdisk     [Msun]   : disk mass
+1.0         ! Rin       [AU]     : inner disk radius
+10.0        ! Rout      [AU]     : outer disk radius 
+1.5         ! epsilon   [-]      : power index of vert. col.dens. as func of x 
+50.0        ! beta_max  [deg]    : maximum half opening angle of resolved disk
+0.01        ! dust_to_gas [-]    : the dust-to-gas mass ratio
+3.1         ! rho_gr    [g/cm^3] : dust grain material mass density
+0.005       ! amin      [mic]    : minimum dust particle size  
+0.25        ! amax      [mic]    : maximum dust particle size
+3.5         ! apow      [-]      : dust size distr power index f(a)~a^-apow
+.true.      ! Xrays     [-]      : use Xray chemistry and heating?
+2.7E+2      ! Xray_Lum  [erg/s]  : X-ray luminosity
+1.0         ! Xray_Emin [keV]    : X-ray min. photon energy
+1.E+7       ! Xray_Temp [keV]    : X-ray emission temperature
+5.0E-17     ! CRI       [1/s]    : cosmic ray ionisation of H2 (UMIST:1.36E-17)
+0.0         ! CRCS      [cm^2]   : cosmic rate absorption 
+1.0E-20     ! CHI_ISM   [-]      : strength of incident vertical UV  
+0.0         ! alpha_vis [-]      : viscous heating parameter
+0.15        ! v_turb    [km/s]   : doppler width of UV H2-lines
+2           ! NDUST              : number of selected dust species
+  0.75       AstroSilicate_Draine[s]
+  0.25       amC-Zubko[s]
+
+------ tolerances ------
+0.05        ! tol_convergence   : convergence criterion for global interation 
+1.0E-8      ! tol_diskstruc     : rel.&abs. tolerance for vertical disk struc
+1.0E-8      ! temp_precis       : rel. tolerance for temperature determination
+1.0E-11     ! chem_precis       : precision in solve_chemistry
+2.0E-5      ! rtol_chem         : rel. tolerance for advance_chemistry
+1.0E-99     ! atol_chem         : abs. tolerance for advance_chemistry
+
+------ switches ------
+0           ! verbose_level     : how much output? (0...4)
+.false.     ! calcSED
+.false.     ! solve_diskstruc   : solve the vertical hydrostatic structure?
+.true.      ! solve_temp        : solve the heating/cooling balance?
+.false.     ! conserve_pressure : conserve pgas instead of n<H>?
+.false.     ! Td_from_RT        : calculate dust temp. from RT?
+.false.     ! restart           : restart from checkpoint file?
+.true.      ! Textrapolate      : extrapolate T in gas-phase reactions?
+.true.      ! NewChemScan
+onlyadd     ! handle_UMIST      : handle UMIST-data (overwrite/erase/onlyadd)
+0           ! num_noerase       : exceptions from erasing UMIST data
+
+------- grid ------
+3           ! NXX
+120         ! NZZ
+3           ! N1UV
+7           ! NUV
+19          ! NLAM
+17          ! Ntheta
+120 	    ! sparse_Nlev
+
+.false.     ! radtrans              : calculate dust continuum RT?
+.true.      ! chi_from_RT           : calculate chi from UV RT?
+.true.      ! Jback_from_RT         : calculate background Jnu from RT?
+.true.      ! Rphoto_from_RT        : calculate photorates from RT
+.false.     ! Rphoto_bandint        : use UV-optical colours from star?
+.false.     ! UVpumping             : use large model atoms?
+.false.     ! UV_H2                 : use electronic level?
+.false.     ! Federman_H2_shielding : new H2_H2 shielding factors?

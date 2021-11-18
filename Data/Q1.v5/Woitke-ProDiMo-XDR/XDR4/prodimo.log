@@ -1,0 +1,585 @@
+                           o
+                          / \
+  /------------------------------------------------\
+ /                                                  \
+ |                  This is PRODIMO                 |
+ |                                                  |
+ |         Version: 1.0,  Revision: 1381            |
+ |        /home/star/pw31/ProDiMo/src_develop       |
+ |                                                  |
+ |  (c) 2010 Peter Woitke, Inga Kamp & Wing-Fai Thi |
+ \                                                  /
+  \------------------------------------------------/
+ 
+ The environment variable 'ProDiMo_datapath' not set!
+ The default path will be used ../data/
+ 
+ INIT_ELEMENTS: ...
+ selected elements  12
+H  He C  N  O  Ne Na Mg Si S  Ar Fe 
+ 
+ INIT_PAH: ...
+ circumcoronene      
+          54  carbon atoms
+          18  hydrogen atoms
+ PAH particle radius           =   4.87E-08 cm
+ PAH mass/macromolecule        =     666.74 amu
+ total mass of PAH in the disk =   1.41E-08 Msun
+ mass of PAH/total solid mass  =   1.41E-03
+ NC=  54 charge=-1 IP[eV]=  3.103
+ NC=  54 charge= 0 IP[eV]=  6.243
+ NC=  54 charge= 1 IP[eV]=  9.384
+ NC=  54 charge= 2 IP[eV]= 12.524
+ GET_PAH_HC_RATIO=  0.340206908719886     
+ Maximum PAH temperature :1152.1 K
+ The chosen PAH is stable against photodissociation
+ 
+ INIT_SPECIES: ...
+ selected species   82 +  7
+ He      He+     C       C+      O       O+      S       S+      Si      Si+     Mg      Mg+     Fe      OH+     CO      Fe+     CH3     CH4     OH      CO+     CH      CH+     O2      O2+     H2+     H3+     SiO     SiO+    SiH     SiH+    CH2     CH2+    HCO     HCO+    H2O     H2O+    CH3+    SiH2+   SiOH+   H       H+      H-      H2      H3O+    CH4+    CH5+    H2exc   CO2     CO2+    N       N+      NH      NH+     NH2     NH2+    NH3     NH3+    N2      HN2+    CN      CN+     HCN     HCN+    NO      NO+     H2CO    Na      Na+     Na++    Ne      Ne+     Ne++    Ar      Ar+     Ar++    C++     N++     O++     S++     Fe++    Si++    Mg++    PHOTON  CRP     CRPHOT  e-      M       dust    XPHOT   
+ 
+ INIT_REACTIONS: ...
+ 
+ reading UMIST2006 reactions from ../data//UMIST2006.dat ...
+ having included  929 UMIST chemical reactions
+ no of reactions with multiple T-fits: 21
+ 
+ reading additional reactions from Reactions.in ...
+ ***  bad enumbering in Reactions.in           98         100
+ ***  bad enumbering in Reactions.in          144         149
+ ***  bad enumbering in Reactions.in          303         800
+ ***  bad enumbering in Reactions.in          893        1000
+ ***  bad enumbering in Reactions.in         1075        1100
+ ***  bad enumbering in Reactions.in         1118        1500
+ having included  203 additional reactions
+ altogether  1132 chemical reactions
+ no of reactions with multiple T-fits: 21
+ 
+ Reading photoprocesses master list ...
+ found detailed cross-sections for  55 photo-reactions
+ N(photo-dissociation), N(photo-ionisation)  42  13
+ could not find cross-sections for  20 photo-reactions
+ Use default CO self-shielding
+ 
+ INIT_HEATCOOL: ...
+ 
+ allocating SYS ...
+ SYS has size     32 MByte
+ 
+ Read molecular data file  [C II]  ground-state fine-structure
+ Including   1 transitions among   2 levels.
+ Downward collision rates:  H2-C+ (Flower 1990), weighted by thermal o/p; = 0.57
+ Downward collision rates:  e - C+ rate  [Mendoza 1983; Keenan et al. 1986]     
+ Downward collision rates:  H - C+ rate  [Tielens & Hollenbach 1985]            
+ 
+ Reading data from ../data//Oatom_Lambda.dat
+     O,   3 levels,    3 lines, 5 coll.part.
+ - collisions with p-H2      3 transitions,  7 T-points
+ - collisions with o-H2      3 transitions,  7 T-points
+ - collisions with H         3 transitions, 18 T-points
+ - collisions with H+        3 transitions,  1 T-points
+ - collisions with e         3 transitions,  5 T-points
+ 
+ Reading data from ../data//Catom_Lambda.dat
+     C,   3 levels,    3 lines, 6 coll.part.
+ - collisions with H         3 transitions,  5 T-points
+ - collisions with e         3 transitions,  9 T-points
+ - collisions with H+        3 transitions,  5 T-points
+ - collisions with He        3 transitions,  5 T-points
+ - collisions with p-H2      3 transitions,  8 T-points
+ - collisions with o-H2      3 transitions,  8 T-points
+ 
+ Read molecular data file [O I]  ground-state fine-structure
+ Including   3 transitions among   3 levels.
+ Downward collision rates: H2-O COLLISION RATES (FIT LISEAU etal 1999)<- (Jaquet
+ Downward collision rates: e-O COLLISION RATES (FIT LISEAU etal 1999)<-(Bell eta
+ Downward collision rates: H-O COLLISION RATES (FIT LISEAU etal 1999)<-(Launay 1
+ 
+ Reading data from ../data//CO_Lambda.dat
+    CO,  41 levels,   40 lines, 4 coll.part.
+ - collisions with p-H2    820 transitions, 25 T-points
+ - collisions with o-H2    820 transitions, 25 T-points
+ - collisions with He      105 transitions, 10 T-points
+ - collisions with H        28 transitions, 11 T-points
+ 
+ Compute approximate electron impact collision rates
+ Jmax =   41
+ Total number of levels =  41
+ 
+ Read data from ION_Mg+.dat
+ Mg+,  8 levels,  12 lines, 1 coll.part,   25 coll.trans.
+ 
+ Read data from ION_Fe+.dat
+ Fe+,120 levels, 956 lines, 1 coll.part, 3569 coll.trans.
+ 
+ Read data from ION_Si+.dat
+ Si+, 15 levels,  35 lines, 1 coll.part,   37 coll.trans.
+ 
+ Read data from ION_S+.dat
+  S+,  5 levels,   9 lines, 1 coll.part,   10 coll.trans.
+ 
+ Read various data files for o-H2        
+  o-H2    80 levels,  Nvib=  9,  Nrot= 26,  Nlines= 803
+ 276 coll.trans. with    H,  highest level= 25
+ 276 coll.trans. with   He,  highest level= 25
+ 190 coll.trans. with o-H2,  highest level= 22
+ 276 coll.trans. with p-H2,  highest level= 25
+ 
+ Read various data files for p-H2        
+  p-H2    80 levels,  Nvib=  9,  Nrot= 25,  Nlines= 736
+ 351 coll.trans. with    H,  highest level= 28
+ 351 coll.trans. with   He,  highest level= 28
+ 171 coll.trans. with o-H2,  highest level= 19
+ 351 coll.trans. with p-H2,  highest level= 28
+ 
+ Reading data from ../data//COvibrot_Lambda.dat
+    CO, 110 levels,  243 lines, vmax=3, Jmax=50,  6 coll.part.
+ - collisions with p-H2    820 transitions, 14 T-points
+ - collisions with o-H2    820 transitions, 14 T-points
+ - collisions with H        79 transitions, 20 T-points
+ - collisions with H2       79 transitions, 20 T-points
+ - collisions with He       79 transitions, 20 T-points
+ - collisions with e-       15 transitions,  5 T-points
+ 
+ Reading data from ../data//oH2O_Lambda.dat
+ o-H2O,  45 levels,  158 lines, 2 coll.part.
+ - collisions with p-H2    990 transitions,  8 T-points
+ - collisions with o-H2    990 transitions,  8 T-points
+ 
+ Reading data from ../data//pH2O_Lambda.dat
+ p-H2O,  45 levels,  158 lines, 2 coll.part.
+ - collisions with p-H2    990 transitions,  8 T-points
+ - collisions with o-H2    990 transitions,  8 T-points
+ 
+ reading COband data files ...
+ ... done.
+ Reading data from ../data//13CO_Lambda.dat
+  13CO,  41 levels,   40 lines, 2 coll.part.
+ - collisions with p-H2    820 transitions, 14 T-points
+ - collisions with o-H2    820 transitions, 14 T-points
+ 
+ Reading data from ../data//OH_Lambda.dat
+    OH,  20 levels,   50 lines, 2 coll.part.
+ - collisions with p-H2    190 transitions,  6 T-points
+ - collisions with o-H2    190 transitions,  6 T-points
+ 
+ Reading data from ../data//SiO_Lambda.dat
+   SiO,  41 levels,   40 lines, 1 coll.part.
+ - collisions with H2      820 transitions, 33 T-points
+ 
+ Reading data from ../data//NO_Lambda.dat
+    NO,  80 levels,  139 lines, 1 coll.part.
+ - collisions with H2     3160 transitions, 10 T-points
+ 
+ Reading data from ../data//S_Lambda.dat
+     S,   3 levels,    3 lines, 2 coll.part.
+ - collisions with H         3 transitions, 10 T-points
+ - collisions with e-        3 transitions, 10 T-points
+ 
+ Reading data from ../data//CS_Lambda.dat
+    CS,  41 levels,   40 lines, 1 coll.part.
+ - collisions with H2      820 transitions, 11 T-points
+ 
+ Initialiize HD cooling
+ - collisions with H   Reading ../data//qh1hd.dat
+ - collisions with He  Reading ../data//qhehd.dat
+ - collisions with o-H2   Reading ../data//qoh2hd.dat
+ - collisions with p-H2   Reading ../data//qph2hd.dat
+ 
+ Reading data from ../data//HDO_Lambda.dat
+   HDO,  34 levels,  140 lines, 1 coll.part.
+ - collisions with H2      561 transitions,  6 T-points
+ 
+ Reading data from ../data//HCN_Lambda.dat
+   HCN,  30 levels,   29 lines, 1 coll.part.
+ - collisions with H2      435 transitions, 14 T-points
+ 
+ Reading data from ../data//CN_Lambda.dat
+    CN,  41 levels,   59 lines, 2 coll.part.
+ - collisions with He      820 transitions, 12 T-points
+ - collisions with e        61 transitions, 12 T-points
+ 
+ Reading data from ../data//HCO+_Lambda.dat
+  HCO+,  31 levels,   30 lines, 1 coll.part.
+ - collisions with H2      465 transitions, 15 T-points
+ 
+ Compute approximate electron impact collision rates
+ Jmax =   31
+ Total number of levels =  31
+ 
+ Reading data from ../data//CH+_Lambda.dat
+   CH+,  16 levels,   15 lines, 2 coll.part.
+ - collisions with e        20 transitions, 12 T-points
+ - collisions with H2       15 transitions, 13 T-points
+ 
+ Read data from ION_N+.dat
+  N+, 23 levels,  86 lines, 1 coll.part,  245 coll.trans.
+ 
+ Reading data from ../data//oh_hfs.dat
+OH-hfs,  24 levels,   95 lines, 2 coll.part.
+ - collisions with p-H2    276 transitions,  5 T-points
+ - collisions with o-H2    276 transitions,  5 T-points
+ 
+ Reading data from ../data//o-h2co.dat
+o-H2CO,  40 levels,  104 lines, 1 coll.part.
+ - collisions with H2      780 transitions, 21 T-points
+ 
+ Read data from ION_Ne+.dat
+ Ne+,  3 levels,   3 lines, 1 coll.part,    3 coll.trans.
+ 
+ Reading data from ../data//SO_Lambda.dat
+    SO,  70 levels,  156 lines, 1 coll.part.
+ - collisions with H2     2415 transitions,  7 T-points
+ 
+ Reading data from ../data//SO2_Lambda.dat
+   SO2, 198 levels,  855 lines, 1 coll.part.
+ - collisions with He    19503 transitions, 11 T-points
+ 
+ Reading data from ../data//OCS_Lambda.dat
+   OCS,  99 levels,   98 lines, 1 coll.part.
+ - collisions with H2     4851 transitions,  8 T-points
+ 
+ Reading data from ../data//o-H3O+_Lambda.dat
+o-H3O+,   9 levels,    8 lines, 1 coll.part.
+ - collisions with H2       36 transitions,  1 T-points
+ 
+ Reading data from ../data//p-H3O+_Lambda.dat
+p-H3O+,  14 levels,   17 lines, 1 coll.part.
+ - collisions with H2       91 transitions,  1 T-points
+ 
+ Reading data from ../data//h_1/h_1.elvlc
+ swapping           2           3
+ swapping           5           6
+ swapping          10          11
+ swapping          17          18
+ Reading data from ../data//h_1/h_1.wgfa
+ Reading data from ../data//h_1/h_1.splups
+   H, 25 levels,  75 lines, 1 coll.part,   54 coll.trans.
+ 
+ Read data from Hatom_bf_cross_sections.dat
+H  , bound-free cross-sections for   25 levels
+ 
+ Reading data from ../data//hnc_Lambda.dat
+   HNC,  26 levels,   25 lines, 1 coll.part.
+ - collisions with H2      325 transitions, 25 T-points
+ 
+ Reading data from ../data//o-nh3_Lambda.dat
+ o-NH3,  22 levels,   24 lines, 2 coll.part.
+ - collisions with p-H2    136 transitions,  8 T-points
+ - collisions with He      231 transitions, 11 T-points
+ 
+ Reading data from ../data//p-nh3_Lambda.dat
+ p-NH3,  24 levels,   28 lines, 2 coll.part.
+ - collisions with p-H2    276 transitions,  8 T-points
+ - collisions with He      120 transitions, 11 T-points
+ 
+ Reading data from ../data//ArII_Lambda.dat
+   Ar+,   2 levels,    1 lines, 1 coll.part.
+ - collisions with e         1 transitions, 23 T-points
+ 
+ Reading data from ../data//ArIII_Lambda.dat
+  Ar++,   5 levels,    9 lines, 1 coll.part.
+ - collisions with e        10 transitions, 23 T-points
+ 
+ Reading data from ../data//OIII_Lambda.dat
+   O++,   6 levels,   11 lines, 1 coll.part.
+ - collisions with e        13 transitions, 23 T-points
+ 
+ Reading data from ../data//OII_Lambda.dat
+    O+,   5 levels,   10 lines, 1 coll.part.
+ - collisions with e        10 transitions, 23 T-points
+ 
+ Reading data from ../data//SIII_Lambda.dat
+   S++,   5 levels,    9 lines, 1 coll.part.
+ - collisions with e        10 transitions, 23 T-points
+ 
+ Reading data from ../data//NeIII_Lambda.dat
+  Ne++,   5 levels,    9 lines, 1 coll.part.
+ - collisions with e        10 transitions,  9 T-points
+ 
+ Reading data from ../data//NIII_Lambda.dat
+   N++,   2 levels,    1 lines, 1 coll.part.
+ - collisions with e         1 transitions, 23 T-points
+ 
+ Reading data from ../data//HF_Lambda.dat
+    HF,  16 levels,   19 lines, 2 coll.part.
+ - collisions with H2       36 transitions,  8 T-points
+ - collisions with e        19 transitions, 12 T-points
+ 
+  # levels, # rad trans, # partners, # coll. trans, # Temp
+ 1 C+         2      1      3      1      5
+ 2 O          3      3      3      3     10
+ 3 CO        41     40      5    820     40
+ 4 O          3      3      5      3     18
+ 5 C          3      3      6      3      9
+ 6 Mg+        8     12      1     25     40
+ 7 Fe+      120    956      1   3569     40
+ 8 Si+       15     35      1     37     40
+ 9 S+         5      9      1     10     40
+10 o-H2      80    803      4    276     40
+11 p-H2      80    736      4    351     40
+12 CO       110    243      6    820     20
+13 o-H2O     45    158      2    990      8
+14 p-H2O     45    158      2    990      8
+15 13CO      41     40      2    820     14
+16 OH        20     50      2    190      6
+17 SiO       41     40      1    820     33
+18 NO        80    139      1   3160     10
+19 S          3      3      2      3     10
+20 CS        41     40      1    820     11
+21 HD         9      8      4     36     40
+22 HDO       34    140      1    561      6
+23 HCN       30     29      1    435     14
+24 CN        41     59      2    820     12
+25 HCO+      31     30      2    465     40
+26 CH+       16     15      2     20     13
+27 N+        23     86      1    245     40
+28 OH-hfs    24     95      2    276      5
+29 o-H2CO    40    104      1    780     21
+30 Ne+        3      3      1      3     40
+31 SO        70    156      1   2415      7
+32 SO2      198    855      1  19503     11
+33 OCS       99     98      1   4851      8
+34 o-H3O+     9      8      1     36      1
+35 p-H3O+    14     17      1     91      1
+36 H         25     75      1     54     40
+37 HNC       26     25      1    325     25
+38 o-NH3     22     24      2    231     11
+39 p-NH3     24     28      2    276     11
+40 Ar+        2      1      1      1     23
+41 Ar++       5      9      1     10     23
+42 O++        6     11      1     13     23
+43 O+         5     10      1     10     23
+44 S++        5      9      1     10     23
+45 Ne++       5      9      1     10      9
+46 N++        2      1      1      1     23
+47 HF        16     19      2     36     12
+... repl. p-nH2 by p-n<H>/2 for     CO 12  1
+... repl. o-nH2 by o-n<H>/2 for     CO 12  2
+... repl. p-nH2 by p-n<H>/2 for  o-H2O 13  1
+... repl. o-nH2 by o-n<H>/2 for  o-H2O 13  2
+... repl. p-nH2 by p-n<H>/2 for  p-H2O 14  1
+... repl. o-nH2 by o-n<H>/2 for  p-H2O 14  2
+... repl. p-nH2 by p-n<H>/2 for   13CO 15  1
+... repl. o-nH2 by o-n<H>/2 for   13CO 15  2
+... repl. p-nH2 by p-n<H>/2 for     OH 16  1
+... repl. o-nH2 by o-n<H>/2 for     OH 16  2
+... replacing nH2 by n<H>/2 for    SiO 17  1
+... replacing nH2 by n<H>/2 for     NO 18  1
+... replacing nH  by n<H>   for      S 19  1
+... replacing nH2 by n<H>/2 for     CS 20  1
+... replacing nH2 by n<H>/2 for    HDO 22  1
+... replacing nH2 by n<H>/2 for    HCN 23  1
+... repl. nHe by nH+nH2+nHe for     CN 24  1
+... replacing nH2 by n<H>/2 for   HCO+ 25  1
+... replacing nH2 by n<H>/2 for    CH+ 26  2
+... repl. p-nH2 by p-n<H>/2 for OH-hfs 28  1
+... repl. o-nH2 by o-n<H>/2 for OH-hfs 28  2
+... replacing nH2 by n<H>/2 for o-H2CO 29  1
+... replacing nH2 by n<H>/2 for     SO 31  1
+... repl. nHe by nH+nH2+nHe for    SO2 32  1
+... replacing nH2 by n<H>/2 for    OCS 33  1
+... replacing nH2 by n<H>/2 for o-H3O+ 34  1
+... replacing nH2 by n<H>/2 for p-H3O+ 35  1
+... replacing nH2 by n<H>/2 for    HNC 37  1
+... repl. p-nH2 by p-n<H>/2 for  o-NH3 38  1
+... repl. p-nH2 by p-n<H>/2 for  p-NH3 39  1
+... replacing nH2 by n<H>/2 for     HF 47  1
+ 
+ Reactions for chemical heating/cooling ...
+...    0 exothermic reactions
+...    2 endothermic reactions
+ 
+ INIT_STAR: ...
+ Teff  [K]    =  5770.0000
+ Lstar [Lsun] =     1.0000
+ Mstar [Msun] =     1.0000
+ Rstar [Rsun] =     1.0026
+ logg         =     4.4354
+ Mdisk [Msun] =   1.00E-03 (3.33E+02 Mearth)
+ R_in  [AU]   =***********
+ R_out [AU]   =***********
+ v(Rin)[km/s] =     0.0002
+ P(Rin)[days] =***********
+ 
+ interpolating Phoenix stellar spectrum ...
+read 8727 points from Phoenix_05700-4.0.dat  corr= 1.005
+read 8727 points from Phoenix_05700-4.5.dat  corr= 1.003
+read 8727 points from Phoenix_05800-4.0.dat  corr= 1.005
+read 8727 points from Phoenix_05800-4.5.dat  corr= 1.003
+ test integrated star spectrum    5770.00000000000        5769.67679762797     
+ adding Xray input spectrum Emin[keV]= 1.00 TXray[K]= 1.0E+07 ...
+ fUV = -1.000000  LUV/Lstar = 0.001361
+ UV-flux between 111.0nm - 145.0nm = 9.83E-18 erg/cm2/s
+ Teff from StarSpectrum.in is   5769.7
+ X-ray luminosity =  2.700E+02 erg/s
+ 
+ initialising DRAINE(1978) UV field ...
+ photon particle fluxes ...
+ - UV band 1 (912-1110)Ang: 2.10601E-13 1/cm^2/s  (chi=1.000E-20)
+ - UV band 2 (912-2050)Ang: 1.92778E-12 1/cm^2/s  (chi=1.003E-20)
+ -    1000 Ang photon flux: 1.03252E-17 1/cm^2/s/(cm^-1)
+ -    1000 Ang   lam*u_lam: 6.84156E-34 erg/cm^3        
+ -     stellar chi at 1 AU: 5.44084E-26 5.45748E-26
+ - ISM irradiation (UV band 1) may dominate >  2.333E-03 AU
+ 
+ INIT_DUST: ...
+ amin[mic], amax[mic], apow =     0.005     0.250     3.500
+ <a>, <a^2>^1/2, <a^3>^1/3  = 8.310E-07 1.036E-06 1.560E-06
+ <a>,     <a^2>,     <a^3>  = 8.310E-07 1.073E-12 3.795E-18
+ 
+name                         filename            mass density [g/cm^3
+TiO2[s]                  nk_TiO2-Posch.dat               3.90
+MgSiO3[s]                nk_MgSiO3-Jena.dat              2.80
+Mg2SiO4[s]               nk_Mg2SiO4-Jena.dat             3.33
+MgFeSiO4[s]              nk_MgFeSiO4-Jena.dat            3.71
+Al2O3[s]                 nk_Al2O3-Jena.dat               3.89
+SiO2[s]                  nk_SiO2-Posch.dat               2.21
+Fe[s]                    nk_Fe-Posch.dat                 7.85
+SiC[s]                   nk_SiC-Anja.dat                 3.20
+amorphC[s]               nk_Carbon-Jena400.dat           1.80
+AstroSilicate_Draine[s]  nk_AstroSilicate_Draine.dat     3.50
+AstroSilicate_MW89[s]    nk_AstroSilicate_MW89.dat       3.50
+amC-Zubko[s]             nk_amC-zb1.dat                  1.80
+Oss_Draine[s]            nk_Oss_Draine.dat               3.50
+cryst_silicate[s]        nk_mg2_0.33_0000_037.dat        3.33
+H2Oice[s]                nk_H2OiceWarren.dat             0.92
+vacuum[s]                nk_vacuum.dat                   0.00
+FeO[s]                   nk_FeO.dat                      2.40
+amorphous_H2Oice[s]      nk_H2O_Li.dat                   1.20
+amC-Zubko-ACAR[s]        nk_amC-zb2-ACAR.dat             1.95
+ 
+ reading dust (n,k)-data for TiO2[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for MgSiO3[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for Mg2SiO4[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for MgFeSiO4[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for Al2O3[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for SiO2[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for Fe[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for SiC[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for amorphC[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for AstroSilicate_Draine[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for AstroSilicate_MW89[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for amC-Zubko[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for Oss_Draine[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for cryst_silicate[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for H2Oice[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for vacuum[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for FeO[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for amorphous_H2Oice[s] ...
+  ... from ../data/OpticalData/
+ reading dust (n,k)-data for amC-Zubko-ACAR[s] ...
+  ... from ../data/OpticalData/
+ 
+ chosen dust volume mix consists of ...
+ AstroSilicate_Draine[s]   Vs= 75.00%  rho_gr = 3.500 g/cm^3
+ amC-Zubko[s]              Vs= 25.00%  rho_gr = 1.800 g/cm^3
+                 dust material density of mix = 3.075 g/cm^3
+ 
+ monochromatic dust opacities (NSIZE=300) ...
+ ... taking Mie results from Mie.tmp
+ *** normalizing BENCHMARK dust opacities  fac=  0.852578290261394     
+ band-mean (unsettled) dust opacities ...
+ lam[mic]=   0.094  <Qext>=1.46189  <Qabs>=0.99214  <Qsca>=0.46974
+ lam[mic]=   0.101  <Qext>=1.46189  <Qabs>=0.99214  <Qsca>=0.46974
+ lam[mic]=   0.107  <Qext>=1.41141  <Qabs>=0.94999  <Qsca>=0.46142
+ lam[mic]=   0.119  <Qext>=1.31447  <Qabs>=0.86166  <Qsca>=0.45281
+ lam[mic]=   0.138  <Qext>=1.12062  <Qabs>=0.67403  <Qsca>=0.44659
+ lam[mic]=   0.170  <Qext>=0.91288  <Qabs>=0.49956  <Qsca>=0.41332
+ lam[mic]=   0.186  <Qext>=0.75380  <Qabs>=0.38746  <Qsca>=0.36634
+ lam[mic]=   0.229  <Qext>=0.62535  <Qabs>=0.34026  <Qsca>=0.28509
+ lam[mic]=   0.287  <Qext>=0.55351  <Qabs>=0.33716  <Qsca>=0.21634
+ lam[mic]=   0.358  <Qext>=0.49094  <Qabs>=0.31009  <Qsca>=0.18085
+ lam[mic]=   0.448  <Qext>=0.42352  <Qabs>=0.27100  <Qsca>=0.15252
+ lam[mic]=   0.560  <Qext>=0.35144  <Qabs>=0.22482  <Qsca>=0.12662
+ lam[mic]=   0.701  <Qext>=0.27590  <Qabs>=0.17667  <Qsca>=0.09923
+ lam[mic]=   0.876  <Qext>=0.20210  <Qabs>=0.13119  <Qsca>=0.07091
+ lam[mic]=   1.096  <Qext>=0.13719  <Qabs>=0.09381  <Qsca>=0.04338
+ lam[mic]=   1.371  <Qext>=0.08704  <Qabs>=0.06454  <Qsca>=0.02249
+ lam[mic]=   1.714  <Qext>=0.05539  <Qabs>=0.04512  <Qsca>=0.01027
+ lam[mic]=   2.144  <Qext>=0.03680  <Qabs>=0.03244  <Qsca>=0.00435
+ lam[mic]=   2.681  <Qext>=0.02585  <Qabs>=0.02408  <Qsca>=0.00177
+ 
+ DISK_STRUCTURE: ...
+ 
+ DUST STRUCTURE: ...
+ 
+ DUST OPACITIES: ...
+ - freeze ix=  2 iz= 42 nfix=1.509E-04 tau_vert=3.313E+01 tau_rad=2.090E+06
+ - freeze ix=  3 iz= 42 nfix=1.509E-04 tau_vert=3.471E+01 tau_rad=4.179E+06
+ 
+ INIT XRAY CROSS SECTIONS: ...
+ 
+ Building total X-ray cross section with: H 
+ Building total X-ray cross section with: He
+ Building total X-ray cross section with: C 
+ Building total X-ray cross section with: N 
+ Building total X-ray cross section with: O 
+ Building total X-ray cross section with: Ne
+ Building total X-ray cross section with: Na
+ Building total X-ray cross section with: Mg
+ Building total X-ray cross section with: Si
+ Building total X-ray cross section with: S 
+ Building total X-ray cross section with: Ar
+ Building total X-ray cross section with: Fe
+ 
+ INCIDENT INTENSITIES ...
+ 
+ APPLYING TDUST-formula ...
+ ESTIMATE MEAN INTENSITIES ...
+ maxtau=   37406519.3610260     
+ 
+ 
+ CHEMISTRY AND ENERGY BALANCE ...
+ 
+  1 
+ incident X-ray flux [erg/cm^2/s] =    270.000000000000     
+ incident    UV flux [erg/cm^2/s] =   1.331907621247235E-023
+ incident    UV flux [erg/cm^2/s] =   1.709050997567704E-023
+........................................................................................................................
+  2 ........................................................................................................................
+  3 ........................................................................................................................
+   time=  229.37 sec
+   max element conservation error   :   1.22E-15
+   max chemical equilibrium error   :   1.00E-11
+   max heating/cooling balance error:   9.86E-04
+   non-LTE calls, %sparse, <it>     :     127974   0.000%  6.0847
+   solve_chemistry calls            :       3351
+   advance_chemistry calls          :          0
+   NR converged after advance_chem  :          0
+   NR failed after advance_chem     :          0
+   advance_chemistry failed         :          0
+ 
+ SOUNDSPEED ...
+ 
+ 
+ DISK_STRUCTURE: ...
+ 
+ DUST STRUCTURE: ...
+ 
+ DUST OPACITIES: ...
+ - freeze ix=  2 iz= 42 nfix=1.509E-04 tau_vert=3.313E+01 tau_rad=2.090E+06
+ - freeze ix=  3 iz= 42 nfix=1.509E-04 tau_vert=3.471E+01 tau_rad=4.179E+06
+ 
+/--------------------------------------------\
+| finished disk structure after iter =    1  |
+| convergence = 0.0000E+00                   |
+\--------------------------------------------/
+ 
