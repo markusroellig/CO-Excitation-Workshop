@@ -1,11 +1,11 @@
 # 2012 Workshop on CO Excitation
 
-##Exciting CO in the Local and High-Redshift Universe
+## Exciting CO in the Local and High-Redshift Universe
 
 27 February - 2 March 2012
 Venue: Lorentz Center@Oort
 
-##Description and Aim
+### Description and Aim
 
 CO is the most widely used tracer of molecular gas throughout the universe. It is seen in a variety of objects: PDRs (UV dominated chemistry), shocks, embedded protostars (low and high mass), protoplanetary disks, interstellar medium (ISM) in nearby and high-redshift galaxies. So far, most observations have focused on the low energy transitions, CO J=1−0, 2−1, and 3−2, which are commonly observed from the ground with a variety of facilities in all these objects. Energy transitions with slightly higher excitation temperatures (J=6 or 7) are much harder to observe in the local universe or even completely blocked (J>8) by the atmosphere. Infrared Space Observatory (ISO) observed a number of high−J CO transitions in the brightest galactic objects. The launch of the Herschel Space Observatory opened up a new spectral window to study the molecular properties of objects at far-infrared and sub-millimeter wavelengths. The accessible wavelength range, ~55−600 μm, reveals new phases of the warm ISM, and makes it possible to study the molecular universe in a variety of conditions. Herschel systematically studies full CO ladders (up to J=38), and a number of guaranteed and open time key programs are dedicated to these particular lines in a variety of sources. Examples from the Herschel science demonstration phase, where CO turns out to be an important tracer, are Markarian 231, an ultra-luminous infrared galaxy, where gas excitation occurs through black hole accretion and star formation, and, on the other side of the range of exploration, the protostar HH46, where the surrounding hot gas is photon and shock heated. The ultimate goal is to use the CO ladder and fully understand the chemistry and excitation of CO as a tracer of the interstellar and circumstellar medium and characterize gas properties, i.e., physics and chemistry and its excitation sources in an unprecedented way.
 
