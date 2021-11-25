@@ -1,5 +1,6 @@
-<img align="right" src="CO-poster.jpg" width="50%" HSPACE="50" VSPACE="50" />
 # Exciting CO in the Local and High-Redshift Universe
+
+<img align="right" src="CO-poster.jpg" width="50%" HSPACE="50" VSPACE="50" />
 
 ### 27 February - 2 March 2012
 ### Venue: Lorentz Center@Oort
